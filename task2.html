@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: arial, sans-serif;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      .container {
+        padding: 3rem;
+      }
+      #item_list {
+        margin-top: 1rem;
+      }
+      .flex {
+        display: flex;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>List Filter task</h2>
+      <div class="flex justify-between">
+        <div>
+          <label for="category">Filter by category</label>
+          <select name="category" id="category_filter">
+            <option selected disabled value="">Select filter</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Books">Books</option>
+            <option value="Home & Kitchen">Home & Kitchen</option>
+            <option value="Toys & Games">Toys & Games</option>
+          </select>
+          <button id="remove_cat_filter">Remove</button>
+        </div>
+        <div>
+          <label id="available_label" for="available"
+            >Filter by Availability</label
+          >
+          <select name="available" id="availability_filter">
+            <option selected disabled value="">
+              Select availability status
+            </option>
+            <option value="true">Available</option>
+            <option value="false">Not Available</option>
+          </select>
+          <button id="remove_availablilty_filter">Remove</button>
+        </div>
+      </div>
+
+      <table id="item_list">
+        <thead id="item_list_head">
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Available</th>
+          </tr>
+        </thead>
+        <tbody id="item_list_body"></tbody>
+      </table>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

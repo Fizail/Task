@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+}
+.container {
+  padding: 3rem;
+}
+.title {
+  font-size: 40px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 1rem;
+}
+.blue {
+  color: #434ce7;
+}
+.card {
+  border: 1px solid #434ce7;
+  border-radius: 10px;
+  padding: 20px;
+}
+.btn {
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  background-color: #434ce7;
+  padding: 3%;
+  border-radius: 10px;
+  border: none;
+}
+.btn:hover {
+  background-color: #656beb;
+}
+
+.center {
+  text-align: center;
+}
+
+.inline {
+  display: flex;
+}
+img {
+  width: 5%;
+  margin: 9px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  .grid-container {
+    grid-template-columns: auto;
+    row-gap: 1rem;
+  }
+}
