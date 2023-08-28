@@ -1,11 +1,10 @@
+// event listeners for adding and removing of filters
 window.addEventListener("load", () => {
   const tableBody = document.getElementById("item_list_body");
   const categoryDropdown = document.getElementById("category_filter");
   const removeCatFilterBtn = document.getElementById("remove_cat_filter");
   const availabilityDropdown = document.getElementById("availability_filter");
-  const removeAvailabilityFilterBtn = document.getElementById(
-    "remove_availablilty_filter"
-  );
+  const removeAvailabilityFilterBtn = document.getElementById("remove_availablilty_filter");
 
   const products = [
     {
@@ -81,7 +80,7 @@ window.addEventListener("load", () => {
       available: false,
     },
   ];
-
+// dynamically adding data from products (array of objects)
   function getTableRows(products) {
     return products
       ?.map((product) => {

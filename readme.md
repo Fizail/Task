@@ -1,1 +1,4 @@
+lazy loading :- is a phenomena/process of loading a component or page on demand , it reduces load time . It is used in creating big web applications say e.g if we have a filght booking app like make my trip which deals with hotel booking air ticketing bus tikecting and all the home page has air and hotel ticketing data we have separate pages for railway and bus ticketing , so when a user enters the website we only want to load the data of home page (this will decrease the load time) and only when a user clicks on say bus ticketing page at the time that data will load.
 
+
+Code splitting :- it is a phenomenon  of splitting code into smaller parts(chunks) to increase performance of our website / webapp and only using that part which is reuired at a given time (creating logical code dependencies) .

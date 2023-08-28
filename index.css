@@ -1,8 +1,12 @@
 body {
-  font-family: sans-serif;
+  font-family: arial,sans-serif;
 }
 .container {
   padding: 3rem;
+}
+a{
+  font-size: 30px;
+  color: #656beb;
 }
 .title {
   font-size: 40px;
@@ -45,6 +49,36 @@ img {
   margin: 9px;
 }
 
+/* task 2 styling */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.containerTable {
+  padding: 3rem;
+}
+#item_list {
+  margin-top: 1rem;
+}
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+/* media query for handling responsiveness on small size screens */
 @media (max-width: 600px) {
   .container {
     padding: 1rem;
